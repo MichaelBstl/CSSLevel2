@@ -1,63 +1,33 @@
-h1 {
-  float: left;
-  width: 500px;
-}
-h1::before {
-  content: "text that cannot be selected";
-  color: red;
-}
-.popup {
-  float: left;
-  width: 340px;
-  background: #727272;
-  padding: 10px;
-  border-radius: 6px;
-  color: #FFF;
-  position: relative;
-  font-size: 12px;
-  line-height: 20px;
-}
-.popup:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-right: 12px solid #727272;
-  position: absolute;
-  top: 16px;
-  left: -12px;
-}
-body, .outline-container {
-  counter-set: section 5; /* Set a counter named 'section', and it`s initial value is 0. */
+* {
+  box-sizing: border-box;
 }
 
-h2.outline::before {
-  counter-increment: section; /* Increment the value of section counter by 1 */
-  content: counter(section) '. '; /* Display the value of section counter */
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
-#shape1 {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-#shape2 {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-  border-radius: 50%;
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-#shape3 {
-  height: 50px;
-  width: 100px;
-  background-color: #555;
-  border-radius: 50%;
-}
-#shape4{
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
