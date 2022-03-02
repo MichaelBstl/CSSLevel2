@@ -186,3 +186,9 @@ body {
   top: 53px;
   left: 66px;
 }
+.simpleBorder {
+  height: 200px;
+  width: 200px;
+  border-radius: 25% 37% 49% 40% / 25% 37% 49% 40%;
+  border: 5px solid red;
+}
