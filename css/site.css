@@ -1,33 +1,26 @@
-* {
-  box-sizing: border-box;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
+body {
+  background-image: url('/popTartCat.gif');
+  background-repeat: repeat;
+ }
+ div {
+   font-family: 'Courier New';
+   font-size: x-large;
+   font-weight: 700;
+   left: 100px;
+   text-align: center;
+   line-height: 85px;
+   font-size: 70px;
+   color: blue;
+   text-shadow:
+   0 1px red,
+   0 2px white,
+   0 3px blue,
+   0 4px red,
+   0 5px white,
+   0 6px  1px  rgba(0, 0, 0, 0.1),
+   0 0    5px  rgba(0, 0, 0, 0.1),
+   0 1px  3px  rgba(0, 0, 0, 0.3),
+   0 3px  5px  rgba(0, 0, 0, 0.2),
+   0 5px  10px rgba(0, 0, 0, 0.25),
+   0 10px 10px rgba(0, 0, 0, 0.2),
+   0 20px 20px rgba(0, 0, 0, 0.15); }
