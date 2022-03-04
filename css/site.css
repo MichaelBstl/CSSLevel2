@@ -9,6 +9,11 @@ body {
   position: absolute;
   top:50%;
   left:50%;
+  animation-name: dance;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 .face {
   width:  300px;
@@ -191,4 +196,58 @@ body {
   width: 200px;
   border-radius: 25% 37% 49% 40% / 25% 37% 49% 40%;
   border: 5px solid red;
+}
+@keyframes dance {
+  0%{
+    transform:
+      translate3d(0, 0, 0) rotate(0deg) scale(1, 1);
+  }
+  10% {
+    transform:
+      translate3d(10px, 5px, 0) rotate(10deg) scale(1.1, 1.1);
+  }
+  20% {
+    transform:
+      translate3d(20px, 25px, 0) rotate(20deg) scale(1, 1);
+  }
+  30% {
+    transform:
+      translate3d(10px, 5px, 0) rotate(8deg) scale(1, 1);
+  }
+  40% {
+    transform:
+      translate3d(0x, 0px, 0) rotate(0deg) scale(1, 1);
+  }
+  50% {
+    transform:
+      translate3d(-10px, 5px, 0) rotate(8deg) scale(1.1, 1.1);
+  }
+  60% {
+    transform:
+      translate3d(-20px, 25px, 0) rotate(8deg) scale(1, 1);
+  }
+  70% {
+    transform:
+      translate3d(0px, 0px, 0) rotate(0deg) scale(1, 1);
+  }
+  80% {
+    transform:
+      translate3d(-10px, 10px, 0) rotate(8deg) scale(.5, 1);
+  }
+  85% {
+    transform:
+      translate3d(-10px, 10px, 0) rotate(8deg) scale(.1, 1);
+  }
+  90% {
+    transform:
+      translate3d(-10px, 10px, 0) rotate(8deg) scale(0, 1);
+  }
+  95% {
+    transform:
+      translate3d(-10px, 10px, 0) rotate(8deg) scale(.5, 1);
+  }
+  100%{
+    transform:
+      translate3d(0, 0, 0) rotate(0deg) scale(1.5, 1.5);
+  }
 }
